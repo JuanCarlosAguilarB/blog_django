@@ -1,1 +1,7 @@
-hola 
+{% extends 'base.html' %}
+
+{%block content%} Hola <br>
+me lo pela <a class='text-blue-500' href="{% url 'blog:home' %}"> visita mi blog  </a>
+{%endblock content%}
+
+

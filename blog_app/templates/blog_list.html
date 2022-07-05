@@ -4,6 +4,9 @@ me lo pela <a href="{% url 'blog:home' %}"> visita mi blog  </a>
 {% for post in posts %}
 <a href="{% url 'blog:details' post.id %}"> {{post.title}} </a>
 {{post.content}}
+<a href="{% url 'blog:update' post.id %}"> Update</a>
+<a href="{% url 'blog:delete' post.id %}"> Delete</a>
+
 {% endfor %}
 <br>
 
