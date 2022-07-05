@@ -1,1 +1,11 @@
 me lo pela <a href="{% url 'blog:home' %}"> visita mi blog  </a>
+<br>
+
+{% for post in posts %}
+<a href="{% url 'blog:details' post.id %}"> {{post.title}} </a>
+{{post.content}}
+{% endfor %}
+<br>
+
+
+<a href="{% url 'blog:create' %}"> create    </a>
